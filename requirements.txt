@@ -1,0 +1,52 @@
+# =====================
+# LLM & Agent Framework
+# =====================
+
+langchain
+langgraph
+langchain-openai
+
+
+# =====================
+# Environment
+# =====================
+
+python-dotenv
+
+
+# =====================
+# Vector Database / RAG
+# =====================
+
+chromadb
+faiss-cpu
+
+
+# =====================
+# Document Processing
+# =====================
+
+pypdf
+beautifulsoup4
+
+
+# =====================
+# Tokenization
+# =====================
+
+tiktoken
+
+
+# =====================
+# Data Processing
+# =====================
+
+numpy
+pandas
+
+
+# =====================
+# Testing
+# =====================
+
+pytest
