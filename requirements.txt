@@ -12,6 +12,8 @@ langchain-openai
 # =====================
 
 python-dotenv
+streamlit==1.66.1
+filelock
 
 
 # =====================
@@ -27,7 +29,11 @@ faiss-cpu
 # =====================
 
 pypdf
+PyMuPDF==2.0
 beautifulsoup4
+
+# Local Embedding (cached models only at runtime)
+sentence-transformers==6.1.0
 
 
 # =====================

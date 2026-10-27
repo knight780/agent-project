@@ -8,6 +8,8 @@ __pycache__/
 
 # Environment variables
 .env
+.env.*
+!.env.example
 
 # IDE
 .vscode/
@@ -18,3 +20,58 @@ __pycache__/
 # OS
 .DS_Store
 Thumbs.db
+
+# Uploads and persistent vector stores; retain data/sample.pdf as a fixture.
+data/web/
+data/uploads/
+data/chroma*/
+**/chroma.sqlite3*
+
+# Test/tool caches and local agent configuration
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.agents/
+.codex/
+.aws/
+.cursor/
+.idea/
+
+# Credentials (templates must use explicit .example names)
+credentials*.json
+*service-account*.json
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+.netrc
+.npmrc
+.git-credentials
+.streamlit/secrets.toml
+.streamlit/secrets.*.toml
+secrets.json
+secrets.yaml
+secrets.yml
+token.json
+token.pickle
+
+# Keep only the public, version-bound test fixture and data documentation.
+/data/*
+!/data/sample.pdf
+!/data/README.md
+
+# Local documents, logs and editor/Office temporary files
+*.docx
+*.pdf.tmp
+*.log
+*.tmp
+*.bak
+~$*
+~WRL*
+*.sqlite3
+*.sqlite3-*
+*.db
